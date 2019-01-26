@@ -4,7 +4,14 @@
     <script>  
       var bgMusic = new Audio();
       bgMusic.src = "/JoWebsite/Song_Boyish.mp3";
-      function PlaySound() {
+      
+      //Make it loop
+      myAudio.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      
+      window.onload = PlaySound() {
         bgMusic.play();
       }
       
