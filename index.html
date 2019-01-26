@@ -10,7 +10,9 @@
           this.currentTime = 0;
           this.play();
       }, false);*/
-      bgMusic.play();
+      function PlaySound(){
+          bgMusic.play();      
+      }
       
       
   function myFunction() {
@@ -20,12 +22,12 @@
   </head>
   
   <link rel="stylesheet" type="text/css" href="/JoWebsite/index.css">
-  <body style="background-color:powderblue;" >
+  <body style="background-color:powderblue;" onload="myFunction()" >
   <div class="hero-image">
     <div class="hero-text">
       <h1>Happy 5th Anniversary Jo!</h1>
       <p>Here is a website...</p>
-      <button>I Love You</button>
+      <button onclick = "PlaySound()">I Love You</button>
     </div>
   </div>
   
@@ -36,18 +38,18 @@
   </div>
     
     
-    <div style="position: absolute; left: 500px; top: 0px;"> 
-      <a onclick="myFunction()">
-          <img width="200px" src="/JoWebsite/amos_bluescrubjay.gif">
-      </a>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <form action="http://google.com">
+  <div style="position: absolute; left: 500px; top: 0px;"> 
+    <a onclick="myFunction()">
+        <img width="200px" src="/JoWebsite/amos_bluescrubjay.gif">
+    </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <form action="http://google.com">
     <input type="submit" value="Go to Google" />
-</form>
+  </form>
     
 
 
