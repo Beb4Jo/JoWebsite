@@ -11,6 +11,10 @@
           this.play();
       }, false);
       function PlaySound(){
+        if(!scav1.paused) 
+          scav1.pause();  
+        if(!scav2.paused) 
+          scav2.pause();  
           bgMusic.play();      
       }
       
@@ -35,8 +39,8 @@
           scav2.play();  
       }
       
-  function myFunction() {
-    alert("Ahhhhh! eck.");
+  function pickupLine1() {
+    alert("Hey baby are you a hot air balloon? Cuz you make me feel like I'm floating.");
   }
     </script>
   </head>
@@ -52,14 +56,14 @@
   </div>
   
   <div style="position: absolute; left: 50px; top: 550px;"> 
-    <a>
+    <a onclick="PlaySound()">
         <img width="200px" src="/JoWebsite/amos_bluescrubjay.gif">
     </a>
   </div>
     
     
   <div style="position: absolute; left: 550px; top: 550px;"> 
-    <a onclick="myFunction()">
+    <a onclick="pickupLine1()">
         <img width="200px" src="/JoWebsite/amos_bluescrubjay.gif">
     </a>
   </div>
