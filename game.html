@@ -7,6 +7,16 @@ canvas {
     border:3px solid #ff5555;
     background-color: #ffee99;
 }
+ .button {
+  background-color: #4CAF50; /* Green */
+  border: border:50px solid #6CCF70;
+  color: white;
+  padding: 25px 82px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 </style>
 </head>
 <body onload="startGame()">
@@ -139,7 +149,7 @@ function accelerate(n) {
 }
 </script>
 <br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" class = "button">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <p>How long can you stay alive?</p>
 </body>
