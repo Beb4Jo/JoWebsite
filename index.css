@@ -17,6 +17,20 @@ body, html {
   position: relative;
 }
 
+.button {
+  background-color: red;
+  border-style: solid;
+  border-color: pink;
+  color: pink;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
