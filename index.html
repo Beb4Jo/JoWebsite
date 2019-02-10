@@ -39,33 +39,18 @@
           scav2.play();  
       }
       
-  function pickupLine1() {
-    alert("Hey baby, are you a hot air balloon? Cuz you make me feel like I'm floating <3. J");
-  }
-  function pickupLine2() {
-    alert("Hey baby, are you a wizard? Cuz you're making my wand swish and flicker <3. e");
-  }
-  function pickupLine3() {
-    alert("Hey baby, am I a light switch? Cuz you're turning me on <3. t");
-  }
-  function pickupLine4() {
-    alert("Hey baby, are you a fertilizer? Cuz you're makin me grow some hardwood <3. a");
-  }
-  function pickupLine5() {
-    alert("Hey baby, are you a blanket? Cuz I wanna fall a sleep, wrapped up in you <3. i");
-  }
-  function pickupLine6() {
-    alert("Hey baby, are you a word I can't remember? Cuz I can see you on the tip of my tongue <3. m");
-  }
-  function pickupLine7() {
-    alert("Hey baby, are you N2O? Cuz you can always make me laugh <3. e");
-  }
-  function pickupLine8() {
-    alert("Hey baby, are you halo halo? Cuz you're sweet <3. J");
-  }
-  function pickupLine9() {
-    alert("Hey baby, are you an F-5 tornado? Cuz you blow me   away <3. o");
-  }
+      function pickupLine(x) {
+        var pickUpLines = ["Hey baby, are you a hot air balloon? Cuz you make me feel like I'm floating <3. J",
+                          "Hey baby, are you a wizard? Cuz you're making my wand swish and flicker <3. e",
+                          "Hey baby, am I a light switch? Cuz you're turning me on <3. t",
+                          "Hey baby, are you a fertilizer? Cuz you're makin me grow some hardwood <3. a",
+                          "Hey baby, are you a blanket? Cuz I wanna fall a sleep, wrapped up in you <3. i",
+                          "Hey baby, are you a word I can't remember? Cuz I can see you on the tip of my tongue <3. m",
+                          "Hey baby, are you N2O? Cuz you can always make me laugh <3. e",
+                          "Hey baby, are you halo halo? Cuz you're sweet <3. J",
+                          "Hey baby, are you an F-5 tornado? Cuz you blow me   away <3. o"];
+        alert(pickUpLines[x]);
+      }
     </script>
   
   <link rel="stylesheet" type="text/css" href="/JoWebsite/index.css">
@@ -92,7 +77,7 @@
    </div>
         
     <div class="card" style="position: absolute; left: 550px; top: 550px;">
-      <a onclick="pickupLine1()">
+      <a onclick="pickupLine(0)">
          <img width="200px" src="/JoWebsite/birdddd.gif">
       </a>
       <div class="container">
@@ -114,7 +99,7 @@
     <!-- ROW 1!!! -->  
     
     <div class="card" style="position: absolute; left: 100px; top: 1050px;">
-      <a onclick="pickupLine9()">
+      <a onclick="pickupLine(8)">
          <img width="200px" src="https://i.redd.it/w6rb7aj1ug421.jpg">
       </a>
       <div class="container">
@@ -124,7 +109,7 @@
    </div>
     
     <div class="card" style="position: absolute; left: 550px; top: 1050px;">
-      <a onclick="pickupLine2()">
+      <a onclick="pickupLine(1)">
          <img width="200px" src="https://i.redd.it/lkfrv82mxe9x.jpg">
       </a>
       <div class="container">
@@ -134,7 +119,7 @@
    </div>
     
     <div class="card" style="position: absolute; left: 1000px; top: 1050px;">
-      <a onclick="pickupLine5()">
+      <a onclick="pickupLine(5)">
          <img width="200px" src="https://i.redd.it/suf1sb22mvc21.jpg">
       </a>
       <div class="container">
@@ -146,7 +131,7 @@
     <!-- ROW 2!!! -->
     
     <div class="card" style="position: absolute; left: 100px; top: 1550px;">
-      <a onclick="pickupLine7()">
+      <a onclick="pickupLine(6)">
          <img width="200px" src="https://i.redd.it/hy7rljcxsdh01.jpg">
       </a>
       <div class="container">
@@ -156,7 +141,7 @@
    </div>
     
     <div class="card" style="position: absolute; left: 550px; top: 1550px;">
-      <a onclick="pickupLine3()">
+      <a onclick="pickupLine(2)">
          <img width="200px" src="https://i.redd.it/3bv2tf3jgwc21.jpg">
       </a>
       <div class="container">
@@ -166,7 +151,7 @@
    </div>
     
     <div class="card" style="position: absolute; left: 1000px; top: 1550px;">
-      <a onclick="pickupLine8()">
+      <a onclick="pickupLine(8)">
          <img width="200px" src="https://i.redd.it/rlit2aivciv11.jpg">
       </a>
       <div class="container">
@@ -188,7 +173,7 @@
    </div>   
     
     <div class="card" style="position: absolute; left: 550px; top: 2050px;">
-      <a onclick="pickupLine1()">
+      <a onclick="pickupLine(6)">
          <img width="200px" src="https://external-preview.redd.it/kvaCKFqvIhZqh3AoSqMdPGekp0hwM0vvs3oj-N6hzJA.jpg?auto=webp&s=af2e2211fee81f33a4242d6074a101cc86f05dd7">
     </a>
       <div class="container">
@@ -222,7 +207,7 @@
    </div>   
     
     <div class="card" style="position: absolute; left: 550px; top: 2650px;">
-      <a onclick="pickupLine1()">
+      <a onclick="pickupLine(4)">
          <img width="200px" src="https://i.redd.it/giscqdkksfd21.jpg">
     </a>
       <div class="container">
@@ -256,7 +241,7 @@
    </div>   
     
     <div class="card" style="position: absolute; left: 550px; top: 2050px;">
-      <a onclick="pickupLine1()">
+      <a onclick="pickupLine(1)">
          <img width="200px" src="https://i.redd.it/w2jii0du1pr01.jpg">
     </a>
       <div class="container">
@@ -288,7 +273,7 @@
    </div>   
     
     <div class="card" style="position: absolute; left: 550px; top: 2650px;">
-      <a onclick="pickupLine1()">
+      <a onclick="pickupLine(2)">
          <img width="200px" src="https://i.redd.it/2mgnmsv4am0z.jpg">
     </a>
       <div class="container">
