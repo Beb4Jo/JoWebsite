@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      
+      var bgMusic = new Audio();
+      bgMusic.src = "/JoWebsite/Songs/RoadHead.mp3";
+      //Make it loop
+      bgMusic.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      function PlaySound(){
+        if(!scav1.paused) 
+          scav1.pause();  
+        if(!scav2.paused) 
+          scav2.pause();  
+          bgMusic.play();      
+      }
+      
+    </script>
+    
+    
+    
 <div style="text-align:center" >
 <h1> Happy 5th Anniversary Joanne!</h1>
    </div>
