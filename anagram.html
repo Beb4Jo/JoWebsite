@@ -3,12 +3,12 @@
   <head>
     <script>  
       
-      var scav4 = new Audio();
-      scav4.addEventListener('ended', function() {
+      var scav7 = new Audio();
+      scav7.addEventListener('ended', function() {
           this.currentTime = 0;
           this.play();
       }, false);
-      scav4.src = "/JoWebsite/Songs/HappyTogether.mp3";
+      scav7.src = "/JoWebsite/Songs/Paranoid.mp3";
 	    
       var scav5 = new Audio();
       scav5.addEventListener('ended', function() {
@@ -27,25 +27,25 @@
 	    
 	    
 	    
-      function PlayScav4(){
+      function PlayScav7(){
         if(!scav5.paused) 
           scav5.pause();  
         if(!scav6.paused) 
           scav6.pause();  
-          scav4.play();      
+          scav7.play();      
       }
 	    
       function PlayScav5(){
-        if(!scav4.paused) 
-          scav4.pause();  
+        if(!scav7.paused) 
+          scav7.pause();  
         if(!scav6.paused) 
           scav6.pause();  
           scav5.play();      
       }
 	    
       function PlayScav6(){
-        if(!scav4.paused) 
-          scav4.pause();  
+        if(!scav7.paused) 
+          scav7.pause();  
         if(!scav5.paused) 
           scav5.pause();  
           scav6.play();      
@@ -118,7 +118,7 @@
       function takeMessage (num) {
       	if(num - 1 == numChosen && ( numChosen % 3 == 0)){
         	document.getElementById("anagramMessage").innerHTML = decoder[numChosen];
-		PlayScav4();
+		PlayScav7();
 	}
       	else if(num - 1 == numChosen && ( numChosen % 3 == 1)){
         	document.getElementById("anagramMessage").innerHTML = decoder[numChosen];
