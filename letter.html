@@ -18,6 +18,26 @@
       scav4.src = "/JoWebsite/Songs/HappyTogether.mp3";
 	    
 	    
+      var scav8 = new Audio();
+      scav8.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav8.src = "/JoWebsite/Songs/StandByMe.mp3";
+	    
+      var scav9 = new Audio();
+      scav9.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav9.src = "/JoWebsite/Songs/SweetDreams.mp3";
+	    
+      var scav10 = new Audio();
+      scav10.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav10.src = "/JoWebsite/Songs/TakeOnMe.mp3";
 	    
 	    
       function PlaySound(){
@@ -29,6 +49,43 @@
         if(!bgMusic.paused) 
           bgMusic.pause(); 
           scav4.play();      
+      }
+	    //last few songs
+	       
+      function PlayScav8(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
+        if(!scav4.paused) 
+          scav4.pause(); 
+        if(!scav9.paused) 
+          scav9.pause(); 
+        if(!scav10.paused) 
+          scav10.pause(); 
+          scav8.play();      
+      }
+	    
+      function PlayScav9(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
+        if(!scav4.paused) 
+          scav4.pause(); 
+        if(!scav8.paused) 
+          scav8.pause(); 
+        if(!scav10.paused) 
+          scav10.pause(); 
+          scav9.play();      
+      }
+	    
+      function PlayScav10(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
+        if(!scav4.paused) 
+          scav4.pause(); 
+        if(!scav8.paused) 
+          scav8.pause(); 
+        if(!scav9.paused) 
+          scav9.pause(); 
+          scav10.play();      
       }
 	    
     </script>
@@ -49,6 +106,7 @@
 
         <p> Happy anniversary, love. We've been together for years, since grade 11, and so much has happened...</p>
         <p>We...</p>
+	<p>Are <a onclick = "PlayScav4()"><b> happy together,</b></a> </p>
         <p>Went to a cold movie together,</p>
         <p>Started going on walks together,</p>
         <p>Studied together,</p>
@@ -110,12 +168,27 @@
       
         <br>
         <p> I can't wait for all the other memories we're going to have together.</p>
+	<br>
+        <p> I know that you will <a onclick = "PlayScav8()"><b>Stand by Me</b></a> for a long time.</p>
+        <p> Thoughts of you always bring me <a onclick = "PlayScav9()"><b>Sweet Dreams.</b></a></p>
+        <p> I hope that the next time we see each other you will<a onclick = "PlayScav10()"><b>Take on Me</b></a> ;)</p>
+      	<br>
+        <br>
+        <br>
+        <br>
       
       
                 <h4>Happy Valentine's Day. <3</h4>
                 <h4><b>I love you, Joanne Nuque.</b></h4>
                 <p>Love,           </p>
                 <p>                     Benjamin Gharachorloo</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       
     </div>
 
