@@ -6,49 +6,57 @@
       
       
       
-      function shuffle (array) {
-          var i = 0
-            , j = 0
-            , temp = null
 
-          for (i = array.length - 1; i > 0; i -= 1) {
-            j = Math.floor(Math.random() * (i + 1))
-            temp = array[i]
-            array[i] = array[j]
-            array[j] = temp
-          }
-        }
-      
+      function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+      }
+      var numChosen = -1;
+
       function printMessage (num) {
+      	numChosen = num;
         var messages = ["I like your butt",
                       "You are nice",
                      "I love spending time with you",
                      "Jo is soft",
                      "Ben loves you Jo"];
-        var shuffledMessage = messages[num];//shuffle(messages[num]);
+		var theMessage = messages[num];
+        var shuffledMessage = shuffle(theMessage.split(""));
+        shuffledMessage = shuffledMessage.join('');
         document.getElementById("anagramMessage").innerHTML = shuffledMessage;
+        for(var i = 0; i < messages.length; i++)
+        	document.getElementById("message" + (i+1)).innerHTML = messages[i];
       }
       
-      function taketMessage (inputMessage) {
-      
+      function takeMessage (num) {
+      	if(num - 1 == numChosen)
+        	document.getElementById("anagramMessage").innerHTML = "Good Job!";
       }
-      
+     
       
     </script>
     <link rel="stylesheet" type="text/css" href="/JoWebsite/index.css">
     <link rel="shortcut icon" href="/JoWebsite/Pictures/faviconHeart.png.png">
   </head>
-  <body style="background-color:powderblue;" onload="PlaySound()" >
+  <body style="background-color:powderblue;" onload="PlaySound()", autocomplete = "off" >
     
     <div class="hero-image">
-    <div class="hero-text">
-      <h1>Happy 5th Anniversary Jo!</h1>
-      <p>Here is a website...</p>
-      <button class = "button" onclick = "printMessage(1)">I Love You</button>
-    </div>
-  </div>
+    	<div class="hero-text">
+      		<h1>Happy 5th Anniversary Jo!</h1>
+      		<p>Here is a website...</p>
+      		<button class = "button" onclick = "printMessage(1)">I Love You</button>
+    	</div>
+  	</div>
     
     <p id="anagramMessage"></p>
-  
+    
+    <br>
+    <br>
+    <button class = "button" onclick = "takeMessage(1)" id="message1"></button>
+    <br>
+    <button class = "button" onclick = "takeMessage(2)" id="message2"></button>
+    <br>
+    <button class = "button" onclick = "takeMessage(3)" id="message3"></button>
+    <br>
+    <button class = "button" onclick = "takeMessage(4)" id="message4"></button>
   
   </body>
