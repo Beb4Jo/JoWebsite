@@ -11,7 +11,66 @@
           this.play();
       }, false);
       function PlaySound(){
+        if(!scav4.paused) 
+          scav4.pause();  
+        if(!scav5.paused) 
+          scav5.pause();  
+        if(!scav6.paused) 
+          scav6.pause();  
           bgMusic.play();      
+      }
+            var scav4 = new Audio();
+      scav4.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav4.src = "/JoWebsite/Songs/HappyTogether.mp3";
+	    
+      var scav5 = new Audio();
+      scav5.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav5.src = "/JoWebsite/Songs/MrBlueSky.mp3";
+	    
+      var scav6 = new Audio();
+      scav6.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav6.src = "/JoWebsite/Songs/HappyTogether.mp3";
+	    
+	    
+	    
+	    
+      function PlayScav4(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
+        if(!scav5.paused) 
+          scav5.pause();  
+        if(!scav6.paused) 
+          scav6.pause();  
+          scav4.play();      
+      }
+	    
+      function PlayScav5(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
+        if(!scav4.paused) 
+          scav4.pause();  
+        if(!scav6.paused) 
+          scav6.pause();  
+          scav5.play();      
+      }
+	    
+      function PlayScav6(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
+        if(!scav4.paused) 
+          scav4.pause();  
+        if(!scav5.paused) 
+          scav5.pause();  
+          scav6.play();      
       }
       
     </script>
@@ -19,7 +78,7 @@
     
     
 <div style="text-align:center" >
-<h1> Happy 5th Anniversary Joanne!</h1>
+<h1> Happy 5th <a onclick = "PlaySound()"> Anniversary </a>Joanne!</h1>
    </div>
    
   <link rel="stylesheet" type="text/css" href="/JoWebsite/index.css">
@@ -28,29 +87,77 @@
  
   <body style="background: radial-gradient(#e66465, #9198e5);" onload="PlaySound()" >
     <div style="text-align:center" >
-        <h2> Dearest, Jo</h2>
+        <h2><a onclick = "PlaySound()"> Dearest, Jo</a></h2>
 
         <p> Happy anniversary, love. We've been together for years, since grade 11, and so much has happened...</p>
         <p>We...</p>
+        <p>Went to a cold movie together,</p>
+        <p>Started going on walks together,</p>
+        <p>Studied together,</p>
+        <p>Held each other,</p>
+        <p>Danced together,</p>
+        <p>Went to wonderland together ;),</p>
+        <p>Went to prom together,</p>
+        <p>Graduated together,</p>
+        <p>Cooked together,</p>
+        <p>Ate together,</p>
+        <p>Banged together ;),</p>
+        <p>Sang together,</p>
+        <p>Drove together,</p>
+        <p>Loved together,</p>
+        <p>Went to a drive in together,</p>
+        <p>Went to Niagara together,</p>
+        <p>Got a melon together together,</p>
+        <p>Made and bought each other so many gifts,</p>
+        <p>Played together,</p>
+        <p>Wrote together,</p>
+        <p>Slept together at yours, mine, and now on a mountain!,</p>
+        <p>Hiked together,</p>
+        <p>Biked together,</p>
+        <p>Watched together,</p>
+        <p>Laid together,</p>
+        <p>Read together,</p>
+        <p>Fought together,</p>
+        <p>Made up together,</p>
+        <p>Saw the CN Tower together,</p>
+        <p>Saw lots of birds together,</p>
+        <p>Shopped together,</p>
+        <p>Went to Jack Darling together,</p>
+        <p>Went to Erindale together,</p>
+        <p>Went to that Oakville park together,</p>
+        <p>Went to Centenniel together,</p>
+        <p>Went to High Park together,</p>
+        <p>Shared Christmas together,</p>
+        <p>Shared Valentines together,</p>
+        <p>Shared many meals together,</p>
+        <p>Were awkward together,</p>
+        <p>Were laughing together,</p>
+        <p>Were lewd together,</p>
+        <p>Were shrewd together,</p>
+        <p>Were sad together,</p>
+        <p>Were happy together,</p>
+        <p>Were and are <a onclick = "PlayScav4()"><b>together</b></a>,</p>
         <p>I've experienced so many things since dating you, and I'm overjoyed I experienced them with you. You make me happy. 
           You make me smile. You make me content. You fulfill me in so many ways.</p>
         <br>
 
 
-                <h4><b>J</b> Jubilant</h4>
+                <h4><b>J</b>ubilant</h4>
                 <h4><b>O</b>pen</h4>
                 <h4><b>A</b>wesome</h4>
                 <h4><b>N</b>ice</h4>
                 <h4><b>N</b>oice ;)</h4>
                 <h4><b>E</b>ven better than a $1,000,000</h4>
+                <h4><b>lol</b</h4>
       
         <br>
         <p> I can't wait for all the other memories we're going to have together.</p>
       
       
+                <h4>Happy Valentine's Day. <3</h4>
                 <h4><b>I love you, Joanne Nuque.</b></h4>
-                <p>From           </p>
-                <h5>                     Benjamin Gharachorloo</h5>
+                <p>Love,           </p>
+                <p>                     Benjamin Gharachorloo</p>
       
     </div>
 
