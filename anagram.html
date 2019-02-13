@@ -3,9 +3,53 @@
   <head>
     <script>  
       
-      
-      
-      
+      var scav4 = new Audio();
+      scav4.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav4.src = "/JoWebsite/Songs/HappyTogether.mp3";
+	    
+      var scav5 = new Audio();
+      scav5.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav5.src = "/JoWebsite/Songs/MrBlueSky.mp3";
+	    
+      var scav6 = new Audio();
+      scav6.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      scav6.src = "/JoWebsite/Songs/HappyTogether.mp3";
+	    
+	    
+	    
+	    
+      function PlayScav4(){
+        if(!scav5.paused) 
+          scav5.pause();  
+        if(!scav6.paused) 
+          scav6.pause();  
+          scav4.play();      
+      }
+	    
+      function PlayScav5(){
+        if(!scav4.paused) 
+          scav4.pause();  
+        if(!scav6.paused) 
+          scav6.pause();  
+          scav5.play();      
+      }
+	    
+      function PlayScav6(){
+        if(!scav4.paused) 
+          scav4.pause();  
+        if(!scav5.paused) 
+          scav5.pause();  
+          scav6.play();      
+      }
 
       function shuffle(array) {
         return array.sort(() => Math.random() - 0.5);
@@ -28,8 +72,18 @@
       }
       
       function takeMessage (num) {
-      	if(num - 1 == numChosen)
+      	if(num - 1 == numChosen && ( numChosen % 3 == 0)){
         	document.getElementById("anagramMessage").innerHTML = "Good Job!";
+		PlayScav4();
+	}
+      	else if(num - 1 == numChosen && ( numChosen % 3 == 1)){
+        	document.getElementById("anagramMessage").innerHTML = "Good Job!";
+		PlayScav5();
+	}
+      	else if(num - 1 == numChosen && ( numChosen % 3 == 2)){
+        	document.getElementById("anagramMessage").innerHTML = "Good Job!";
+		PlayScav6();
+	}
       }
      
       
