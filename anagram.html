@@ -80,6 +80,30 @@
 		     "You make me happy Jo",
 		     "I wanna see the world with you",
 		     "You are my world"];
+        var decoder = ["A => J",
+		      "B => O",
+		      "C => N",
+		      "D => T",
+		      "E => F",
+		      "F => I",
+		      "G => B",
+		      "H => A",
+		      "I => L",
+		      "J => G",
+		      "K => W",
+		      "L => C",
+		      "M => M",
+		      "N => E",
+		      "O => V",
+		      "P => R",
+		      "R => H",
+		      "S => Q",
+		      "T => S",
+		      "U => U",
+		      "V => Y",
+		      "W => X",
+		      "X => K",
+		      "Y => D"]
 	    
       function printMessage () {
       	numChosen = Math.floor(Math.random()*messages.length);
@@ -93,15 +117,15 @@
       
       function takeMessage (num) {
       	if(num - 1 == numChosen && ( numChosen % 3 == 0)){
-        	document.getElementById("anagramMessage").innerHTML = messages[numChosen];
+        	document.getElementById("anagramMessage").innerHTML = decoder[numChosen];
 		PlayScav4();
 	}
       	else if(num - 1 == numChosen && ( numChosen % 3 == 1)){
-        	document.getElementById("anagramMessage").innerHTML = messages[numChosen];
+        	document.getElementById("anagramMessage").innerHTML = decoder[numChosen];
 		PlayScav5();
 	}
       	else if(num - 1 == numChosen && ( numChosen % 3 == 2)){
-        	document.getElementById("anagramMessage").innerHTML = messages[numChosen];
+        	document.getElementById("anagramMessage").innerHTML = decoder[numChosen];
 		PlayScav6();
 	}
       }
