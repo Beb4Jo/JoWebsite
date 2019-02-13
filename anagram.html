@@ -56,7 +56,6 @@
       }
       var numChosen = -1;
 
-      function printMessage () {
         var messages = ["I like your butt",
                       "You are nice",
                      "I love spending time with you",
@@ -70,12 +69,19 @@
                      "You're my cinnabun",
                      "I want hugs",
                      "Happy Valentine's!",
+		      "I love your smile",
                      "kiss me",
                      "Your eyes are gems",
                      "Couchez-vous avec moi",
                      ":p",
                      "I <3 U",
-                     "I like time with you"];
+                     "I like time with you",
+		     "Your laugh is beautiful",
+		     "You make me happy Jo",
+		     "I wanna see the world with you",
+		     "You are my world"];
+	    
+      function printMessage () {
       	numChosen = Math.floor(Math.random()*messages.length);
 		var theMessage = messages[numChosen];
         var shuffledMessage = shuffle(theMessage.split(""));
@@ -87,15 +93,15 @@
       
       function takeMessage (num) {
       	if(num - 1 == numChosen && ( numChosen % 3 == 0)){
-        	document.getElementById("anagramMessage").innerHTML = "Good Job!";
+        	document.getElementById("anagramMessage").innerHTML = messages[numChosen];
 		PlayScav4();
 	}
       	else if(num - 1 == numChosen && ( numChosen % 3 == 1)){
-        	document.getElementById("anagramMessage").innerHTML = "Good Job!";
+        	document.getElementById("anagramMessage").innerHTML = messages[numChosen];
 		PlayScav5();
 	}
       	else if(num - 1 == numChosen && ( numChosen % 3 == 2)){
-        	document.getElementById("anagramMessage").innerHTML = "Good Job!";
+        	document.getElementById("anagramMessage").innerHTML = messages[numChosen];
 		PlayScav6();
 	}
       }
@@ -127,6 +133,46 @@
 	    <button class = "button"   onclick = "takeMessage(3)" id="message3"></button>
 	    <br>
 	    <button class = "button"   onclick = "takeMessage(4)" id="message4"></button>
+	    <br>
+	    <button class = "button"  onclick = "takeMessage(5)" id="message5"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(6)" id="message6"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(7)" id="message7"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(8)" id="message8"></button>
+	    <br>
+	    <button class = "button"  onclick = "takeMessage(9)" id="message9"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(10)" id="message10"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(11)" id="message11"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(12)" id="message12"></button>
+	    <br>
+	    <button class = "button"  onclick = "takeMessage(13)" id="message13"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(14)" id="message14"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(15)" id="message15"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(16)" id="message16"></button>
+	    <br>
+	    <button class = "button"  onclick = "takeMessage(17)" id="message17"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(18)" id="message18"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(19)" id="message19"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(20)" id="message20"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(21)" id="message21"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(22)" id="message22"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(23)" id="message23"></button>
+	    <br>
+	    <button class = "button"   onclick = "takeMessage(24)" id="message24"></button>
 	  </div>
   
   </body>
