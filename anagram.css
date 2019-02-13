@@ -17,6 +17,10 @@ body, html {
   position: relative;
 }
 
+.wrapper {
+    text-align: center;
+}
+
 .button {
   background-color: red;
   border-style: solid;
