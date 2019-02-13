@@ -10,69 +10,27 @@
           this.currentTime = 0;
           this.play();
       }, false);
-      function PlaySound(){
-        if(!scav4.paused) 
-          scav4.pause();  
-        if(!scav5.paused) 
-          scav5.pause();  
-        if(!scav6.paused) 
-          scav6.pause();  
-          bgMusic.play();      
-      }
-            var scav4 = new Audio();
+      var scav4 = new Audio();
       scav4.addEventListener('ended', function() {
           this.currentTime = 0;
           this.play();
       }, false);
       scav4.src = "/JoWebsite/Songs/HappyTogether.mp3";
 	    
-      var scav5 = new Audio();
-      scav5.addEventListener('ended', function() {
-          this.currentTime = 0;
-          this.play();
-      }, false);
-      scav5.src = "/JoWebsite/Songs/MrBlueSky.mp3";
-	    
-      var scav6 = new Audio();
-      scav6.addEventListener('ended', function() {
-          this.currentTime = 0;
-          this.play();
-      }, false);
-      scav6.src = "/JoWebsite/Songs/HappyTogether.mp3";
 	    
 	    
 	    
-	    
+      function PlaySound(){
+        if(!scav4.paused) 
+          scav4.pause();  
+          bgMusic.play();      
+      }
       function PlayScav4(){
         if(!bgMusic.paused) 
           bgMusic.pause(); 
-        if(!scav5.paused) 
-          scav5.pause();  
-        if(!scav6.paused) 
-          scav6.pause();  
           scav4.play();      
       }
 	    
-      function PlayScav5(){
-        if(!bgMusic.paused) 
-          bgMusic.pause(); 
-        if(!scav4.paused) 
-          scav4.pause();  
-        if(!scav6.paused) 
-          scav6.pause();  
-          scav5.play();      
-      }
-	    
-      function PlayScav6(){
-        if(!bgMusic.paused) 
-          bgMusic.pause(); 
-        if(!scav4.paused) 
-          scav4.pause();  
-        if(!scav5.paused) 
-          scav5.pause();  
-          scav6.play();      
-      }
-      
     </script>
     
     
@@ -148,7 +106,7 @@
                 <h4><b>N</b>ice</h4>
                 <h4><b>N</b>oice ;)</h4>
                 <h4><b>E</b>ven better than a $1,000,000</h4>
-                <h4><b>lol</b</h4>
+	    <h4><b>lol</b></h4>
       
         <br>
         <p> I can't wait for all the other memories we're going to have together.</p>
