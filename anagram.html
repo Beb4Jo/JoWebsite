@@ -56,14 +56,28 @@
       }
       var numChosen = -1;
 
-      function printMessage (num) {
-      	numChosen = num;
+      function printMessage () {
         var messages = ["I like your butt",
                       "You are nice",
                      "I love spending time with you",
                      "Jo is soft",
-                     "Ben loves you Jo"];
-		var theMessage = messages[num];
+                     "Ben loves you Jo",
+                     "You are nice to be with",
+                     "I like time with you",
+                     "<3",
+                     "Be my valentine",
+                     "IYou're my favourite person",
+                     "You're my cinnabun",
+                     "I want hugs",
+                     "Happy Valentine's!",
+                     "kiss me",
+                     "Your eyes are gems",
+                     "Couchez-vous avec moi",
+                     ":p",
+                     "I <3 U",
+                     "I like time with you"];
+      	numChosen = Math.floor(Math.random()*messages.length);
+		var theMessage = messages[numChosen];
         var shuffledMessage = shuffle(theMessage.split(""));
         shuffledMessage = shuffledMessage.join('');
         document.getElementById("anagramMessage").innerHTML = shuffledMessage;
