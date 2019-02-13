@@ -21,6 +21,10 @@
       
       
       var scav1 = new Audio();
+      scav1.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
       scav1.src = "/JoWebsite/Songs/Africa.mp3";
       function PlayScav1(){
         if(!bgMusic.paused)
@@ -30,6 +34,10 @@
           scav1.play();      
       }
       var scav2 = new Audio();
+      scav2.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
       scav2.src = "/JoWebsite/Songs/Ewtrtw.mp3";
       function PlayScav2(){
         if(!bgMusic.paused)
@@ -241,7 +249,7 @@
     
     <!-- ROW 5!!! -->
     
-    <div class="card" style="position: absolute; left: 100px; top: 2050px;">
+    <div class="card" style="position: absolute; left: 100px; top: 3150px;">
       <a onclick="pickupLine(12)">
           <img width="200px" src="https://i.redd.it/c8l7si58kak11.jpg">
       </a>
@@ -251,7 +259,7 @@
       </div>
    </div>   
     
-    <div class="card" style="position: absolute; left: 550px; top: 2050px;">
+    <div class="card" style="position: absolute; left: 550px; top: 3150px;">
       <a onclick="pickupLine(13)">
          <img width="200px" src="https://i.redd.it/w2jii0du1pr01.jpg">
     </a>
@@ -261,7 +269,7 @@
       </div>
    </div>
     
-    <div class="card" style="position: absolute; left: 1000px; top: 2050px;">
+    <div class="card" style="position: absolute; left: 1000px; top: 3150px;">
       <a onclick="pickupLine(14)">
           <img width="200px" src="https://external-preview.redd.it/lpFZ-YYAzH6FroUPCvjUcLg5sLLcUwDtVdTYJmYAN6w.jpg?auto=webp&s=03e7667e8298b8ff4c712e185525330104abfee6">
       </a>
@@ -273,7 +281,7 @@
     
     <!-- ROW 6!!! -->
     
-    <div class="card" style="position: absolute; left: 100px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 100px; top: 3650px;">
       <a href = "https://www.nationalgeographic.com/animals/birds/">
           <img width="200px" src="https://i.redd.it/bylgnbsgyz411.jpg">
       </a>
@@ -283,7 +291,7 @@
       </div>
    </div>   
     
-    <div class="card" style="position: absolute; left: 550px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 550px; top: 3650px;">
       <a onclick="pickupLine(15)">
          <img width="200px" src="https://i.redd.it/2mgnmsv4am0z.jpg">
     </a>
@@ -293,7 +301,7 @@
       </div>
    </div>
     
-    <div class="card" style="position: absolute; left: 1000px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 1000px; top: 3650px;">
       <a onclick="pickupLine(16)">
           <img width="200px" src="https://i.redd.it/w9dd2spxk6121.jpg">
       </a>
@@ -307,7 +315,7 @@
     
     <!-- ROW 7!! -->
     
-    <div class="card" style="position: absolute; left: 100px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 100px; top: 4150px;">
       <a onclick="pickupLine(17)">
           <img width="200px" src="http://toolonkadunpysakointilaitos.com/wp-content/uploads/2018/08/bird-wallpaper-13-beautiful-hd-and-4k-wallpapers-of-exotic-birds-that-you-should.jpg">
       </a>
@@ -317,7 +325,7 @@
       </div>
    </div>   
     
-    <div class="card" style="position: absolute; left: 550px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 550px; top: 4150px;">
       <a onclick="pickupLine(18)">
          <img width="200px" src="http://toolonkadunpysakointilaitos.com/wp-content/uploads/2018/08/bird-wallpaper-47-backgrounds.jpg">
     </a>
@@ -327,7 +335,7 @@
       </div>
    </div>
     
-    <div class="card" style="position: absolute; left: 1000px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 1000px; top: 4150px;">
       <a onclick="pickupLine(19)">
           <img width="200px" src="https://i.pinimg.com/originals/e0/f0/47/e0f047b304fe333297eee93d351af52b.jpg">
       </a>
@@ -339,7 +347,7 @@
     
     <!-- ROW 8!! -->
     
-    <div class="card" style="position: absolute; left: 100px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 100px; top: 4650px;">
       <a href = "https://www.nationalgeographic.com/animals/birds/">
           <img width="200px" src="http://4.bp.blogspot.com/-EnDHvkggepM/ToqIjx8sWII/AAAAAAAAqzM/VqLXPf2vUW8/s1600/Funny%2Bbird%2BWallpapers%2B%252818%2529.jpg">
       </a>
@@ -349,7 +357,7 @@
       </div>
    </div>   
     
-    <div class="card" style="position: absolute; left: 550px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 550px; top: 4650px;">
       <a onclick="pickupLine(15)">
          <img width="200px" src="https://i2.wp.com/wallpapers.ae/wp-content/uploads/2016/02/Funny-Birds-and-High-Definition-Wallpaper.jpg?fit=1920%2C1080">
     </a>
@@ -359,7 +367,7 @@
       </div>
    </div>
     
-    <div class="card" style="position: absolute; left: 1000px; top: 2650px;">
+    <div class="card" style="position: absolute; left: 1000px; top: 4650px;">
       <a onclick="pickupLine(16)">
           <img width="200px" src="http://www.funnyanimalsite.com/pictures/Wet_Bird.jpg">
       </a>
