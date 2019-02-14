@@ -126,6 +126,7 @@
 		      "Y => D"]
 	    
       function printMessage () {
+	      PlaySound();
       	numChosen = Math.floor(Math.random()*messages.length);
 		var theMessage = messages[numChosen];
         var shuffledMessage = shuffle(theMessage.split(""));
