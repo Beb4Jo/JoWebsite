@@ -2,7 +2,13 @@
 <html>
   <head>
     <script>  
-      
+      var bgMusic = new Audio();
+      bgMusic.src = "/JoWebsite/Songs/12Steps.mp3";
+      //Make it loop
+      bgMusic.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
       var scav7 = new Audio();
       scav7.addEventListener('ended', function() {
           this.currentTime = 0;
@@ -25,9 +31,19 @@
       scav6.src = "/JoWebsite/Songs/HappyTogether.mp3";
 	    
 	    
-	    
+     function PlaySound(){
+        if(!scav5.paused) 
+          scav5.pause();  
+        if(!scav7.paused) 
+          scav7.pause(); 
+        if(!scav6.paused) 
+          scav6.pause(); 
+          bgMusic.play();      
+      }
 	    
       function PlayScav7(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
         if(!scav5.paused) 
           scav5.pause();  
         if(!scav6.paused) 
@@ -36,6 +52,8 @@
       }
 	    
       function PlayScav5(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
         if(!scav7.paused) 
           scav7.pause();  
         if(!scav6.paused) 
@@ -44,6 +62,8 @@
       }
 	    
       function PlayScav6(){
+        if(!bgMusic.paused) 
+          bgMusic.pause(); 
         if(!scav7.paused) 
           scav7.pause();  
         if(!scav5.paused) 
