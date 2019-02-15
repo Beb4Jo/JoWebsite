@@ -70,12 +70,14 @@
           scav5.pause();  
           scav6.play();      
       }
+	    
 
       function shuffle(array) {
         return array.sort(() => Math.random() - 0.5);
       }
       var numChosen = -1;
-
+	    var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
+	    nums = shuffle(nums);
         var messages = ["I like your butt",
                       "You are nice",
                      "I love spending time with you",
@@ -124,10 +126,12 @@
 		      "W => X",
 		      "X => K",
 		      "Y => D"]
-	    
+	    var h = 0;
       function printMessage () {
 	      PlaySound();
-      	numChosen = Math.floor(Math.random()*messages.length);
+      	numChosen = nums[h];
+	      h++;
+	      h = h%24;
 		var theMessage = messages[numChosen];
         var shuffledMessage = shuffle(theMessage.split(""));
         shuffledMessage = shuffledMessage.join('');
